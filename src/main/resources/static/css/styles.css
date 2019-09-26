@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background: url("https://res.cloudinary.com/katgurl21/image/upload/v1569511603/StudentCourseApp/International_School_of_Hamburg_xzoeaf.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
