@@ -17,3 +17,7 @@
 .container{
     background-color: lightblue;
 }
+
+.jumbotron jumbotron-fluid{
+    background-color: aqua;
+}

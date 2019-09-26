@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Courses</title>
+
+    <link rel="stylesheet" href="styles.css" type = "text/css" >
+
+</head>
+<body>
+<div th:insert="base :: navbar"></div>
+<br>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Courses Listing</h1>
+        <p class="lead">Courses for the current semester.</p>
+    </div>
+</div>
+<table class="table table-striped">
+    <thead>
+    <tr>
+
+        <th scope="col">Department ID</th>
+        <th scope="col">Course ID</th>
+        <th scope="col">Title </th>
+        <th scope="col">Description </th>
+        <th scope="col"> Availability (open/closed)</th>
+        <th scope="col">Instructor Name </th>
+        <th scope="col">No. of credits </th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+
+        <td>Computer Science</td>
+        <td>2011</td>
+        <td>Mobile Apps Development</td>
+        <td>Introduces android app development using Java</td>
+        <td>closed</td>
+        <td>Dave</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Computer Science</td>
+        <td>2022</td>
+        <td>Core Java</td>
+        <td> Basic Java Programming Language</td>
+        <td>closed</td>
+        <td>Jennifer</td>
+        <td>4</td>
+
+    </tr>
+    <tr>
+
+        <td>Computer Science</td>
+        <td>2045</td>
+        <td>Oracle SQL</td>
+        <td>Introduces basic SQL language</td>
+        <td>Open</td>
+        <td>Sue</td>
+        <td>4</td>
+    </tr>
+    <tr>
+
+        <td>Computer Science</td>
+        <td>2026</td>
+        <td>Python Programming</td>
+        <td>Python for beginners</td>
+        <td>closed</td>
+        <td>Victor</td>
+        <td>4</td>
+    </tr>
+
+
+    <tr>
+
+        <td>Computer Science</td>
+        <td>2037</td>
+        <td>Advanced Java</td>
+        <td>Introduces advanced level java</td>
+        <td>Open</td>
+        <td>Oona</td>
+        <td>4</td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+<div th:insert="base :: footer"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

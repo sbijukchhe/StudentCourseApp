@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <title>Student Profile</title>
+
+    <link rel="stylesheet" href="styles.css" type = "text/css" >
+
+</head>
+
+<body>
+<div th:insert="base :: navbar"></div>
+
+<div class="container">
+
+    <div class="row">
+
+<!--card for student information-->
+<div class="card" style="width: 18rem;">
+<!--    <img src="..." class="card-img-top" alt="Student Picture">-->
+    <i class="fas fa-user-graduate"></i>
+    <div class="card-body">
+        <h5 class="card-title">Student Profile</h5>
+        <p class="card-text">Student Profile</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Name: </li>
+        <li class="list-group-item">Address: </li>
+        <li class="list-group-item">Email: </li>
+    </ul>
+    <div class="card-body">
+        <a href="/transcript" class="btn btn-primary">Unofficial Transcript</a>
+
+    </div>
+</div>
+</div>
+<br>
+
+
+<!--Student's current courses-->
+        <div class="row">
+<div class="alert alert-primary" role="alert">
+    Courses in progress -
+</div>
+        </div>
+
+    <div class="row">
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">Course ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Instructor's Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>CS 2011</td>
+        <td>Mobile Apps Development</td>
+        <td>Dave</td>
+    </tr>
+    <tr>
+        <td>CS 2022</td>
+        <td>Core Java</td>
+        <td>Jennifer</td>
+    </tr>
+    <tr>
+        <td>CS 2045</td>
+        <td>Oracle SQL</td>
+        <td>Sue</td>
+    </tr>
+
+    </tbody>
+</table>
+
+    </div>
+
+
+    </div>
+
+</div>
+
+<br><br><br><br><br>
+<div th:insert="base :: footer"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
