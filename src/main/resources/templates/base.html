@@ -19,9 +19,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/class">Classes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/other">Student Profile</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/student">Profile</a>
+                        <a class="dropdown-item" href="/transcript">Unofficial Transcript</a>
+                    </div>
             </ul>
         </div>
     </nav>
@@ -40,14 +45,24 @@
                 <li class="nav-item">
                     <a class="nav-link" href="class">Classes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/student">Student Profile</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Students
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/student">Profile</a>
+                        <a class="dropdown-item" href="/transcript">Unofficial Transcript</a>
+                    </div>
             </ul>
         </div>
     </nav>
 </div>
-<div th:fragment="footer">&copy;2019 Green Team</div>
+<div th:fragment="footer">
+    <div class="alert alert-success" role="alert">
+        <p>&copy;2019 Green Team</p>
+        <p>Education for Success</p>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

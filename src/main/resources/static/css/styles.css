@@ -11,3 +11,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
 }
+.alert alert-success{
+    font-size: 10px;
+}
+.container{
+    background-color: lightblue;
+}
